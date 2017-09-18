@@ -8,6 +8,15 @@ import PoemWriter from './components/PoemWriter';
 function login({ username, password }) {
   console.log(`Logging in ${username} with password ${password}`);
 }
+//
+// const rules = {
+//   lines: 3,
+//   words: {
+//     1: 5,
+//     2: 3,
+//     3: 5
+//   }
+// }
 
 ReactDOM.render(
   <div>
@@ -18,7 +27,7 @@ ReactDOM.render(
     <LoginForm onSubmit={login} />
 
     <h1><pre>PoemWriter</pre></h1>
-    <PoemWriter />
+    <PoemWriter/>
   </div>,
   document.getElementById('root')
 );
